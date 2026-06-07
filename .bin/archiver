@@ -1,0 +1,15 @@
+#!/bin/sh
+
+directory="${1:-.}"
+date="$(date +%Y%m%d%H%M)"
+
+echo $directory;
+
+for file in "$directory"/*; do
+    if [ -d "$file" ]; then
+        echo "Compressing...       $file"
+        tar --xz -cf $file.tar.xz $file &&
+        echo "Generating sha256... $file.sha256" &&
+        sha256sum $(basename "$file").tar.xz > $file.sha256;
+    fi
+done

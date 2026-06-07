@@ -1,0 +1,9 @@
+[window]
+opacity = 1.0
+blur = true
+startup_mode = "Maximized"
+decorations = "None"
+padding = { x = 10, y = 10 }
+[font]
+size = 18
+
