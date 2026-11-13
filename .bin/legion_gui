@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo ~/builds/LenovoLegionLinux/LenovoLegionLinux/python/legion_linux/legion_linux/legion_gui.py $@
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+git -C $1 filter-repo --mailmap ../mailmap
+git -C $1 shortlog -e

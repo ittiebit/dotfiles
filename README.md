@@ -59,10 +59,9 @@ stow .
 (this might be too confusing/incorrect..)
 
 1. See available shells with `cat /etc/shells`
-2. Run `chsh /usr/bin/zsh` to change *default shell*.
-3. Run `chsh -s /usr/bin/zsh` to change the *interactive shell*
+2. Run `chsh -s /usr/bin/zsh` to change the shell
     - Alternative: `chsh -s $(which zsh)`
-4. Reboot
+3. Reboot
 
 Note: `echo $SHELL` to troubleshoot
 
